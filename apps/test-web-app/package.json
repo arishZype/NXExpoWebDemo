@@ -12,7 +12,9 @@
     "react-native-web": "*",
     "@nx/expo": "*",
     "@expo/metro-config": "*",
-    "react": "*"
+    "react": "*",
+    "@expo/webpack-config": "^19.0.0",
+    "@nx/webpack": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/test-web-app && cp package-lock.json apps/test-web-app",

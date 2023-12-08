@@ -32,8 +32,13 @@
       }
     },
     "build": {
-      "executor": "@nx/expo:build",
-      "options": {}
+      "executor": "@nx/webpack:webpack",
+      "options": {
+        "webpackConfig": "./webpack.config.js",
+        "isolatedConfig": true,
+        "tsConfig": "./tsconfig.json",
+        "main":"./index.js"
+      }
     },
     "submit": {
       "executor": "@nx/expo:submit",
